@@ -117,15 +117,19 @@ a:hover {
 
 /* ========== HEADER SECTION ========== */
 .hero-anak-asuh {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 56px; /* Sesuaikan dengan tinggi navbar */
-  color: white;
-  padding: 2rem;
-  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin-top:30px;
+  color:white;
+  padding:2rem;
+  position:relative;
 }
 
 .hero-anak-asuh h1 {
