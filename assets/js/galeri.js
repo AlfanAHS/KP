@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Load gallery data from JSON file
-  $.getJSON('/assets/data/galeri-grid.json', function(galleryData) {
+  $.getJSON('assets/data/galeri-grid.json', function(galleryData) {
     // Global variables for gallery state
     let currentPage = 1;
     let itemsPerPage = 12;
