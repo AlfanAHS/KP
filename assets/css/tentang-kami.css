@@ -17,7 +17,7 @@ body {
   }
 
 .hero-about {
-  background-image: url('/img/tentang-kami.png');
+  background-image: url('img/tentang-kami.png');
   background-color: var(--hero-gradient-start)var(--hero-gradient-end);
   background-size: cover;
   background-position: center;
