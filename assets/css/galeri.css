@@ -14,7 +14,7 @@
 
 /* Header Galeri */
 .hero-galeri {
-  background:linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('/img/tentang-kami.png') center/cover no-repeat;
+  background:linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('img/tentang-kami.png') center/cover no-repeat;
   min-height:60vh;
   display:flex;
   align-items:center;

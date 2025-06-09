@@ -14,7 +14,7 @@
 
 /* Hero Section */
 .hero-relawan {
-  background:linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('/img/tentang-kami.png') center/cover no-repeat;
+  background:linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('img/tentang-kami.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

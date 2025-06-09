@@ -56,7 +56,7 @@ $(document).ready(function() {
   function fetchNewsData() {
     showLoading();
     
-    fetch('/assets/data/berita.json')
+    fetch('assets/data/berita.json')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
