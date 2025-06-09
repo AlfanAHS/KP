@@ -1,0 +1,253 @@
+/* CSS Khusus Halaman Detail Berita */
+.detail-header {
+  background: linear-gradient(rgba(40, 167, 69, 0.9), rgba(30, 86, 49, 0.95));
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  margin-top: -1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.detail-header h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.news-meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.news-meta i {
+  margin-right: 5px;
+}
+
+.share-buttons {
+  font-size: 1.2rem;
+}
+
+.share-buttons a:hover {
+  color: #28a745 !important;
+}
+
+.news-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.news-content p {
+  margin-bottom: 1.5rem;
+}
+
+.news-content img {
+  margin: 1.5rem 0;
+}
+
+.news-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.news-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #28a745;
+}
+
+.news-navigation h6 {
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.news-navigation a:hover h6 {
+  color: #28a745;
+}
+
+/* Sidebar Styles */
+.sidebar-card {
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.sidebar-card .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 1.25rem;
+}
+
+.related-news-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.related-news-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.related-news-item h6 {
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.related-news-item a:hover h6 {
+  color: #28a745;
+  text-decoration: none;
+}
+
+/* Archive Styles */
+.archive-year {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.archive-year:hover {
+  color: #28a745;
+}
+
+.archive-year i {
+  transition: transform 0.2s;
+}
+
+.archive-month {
+  padding-left: 1rem;
+  display: none;
+}
+
+.archive-month.show {
+  display: block;
+}
+
+.archive-month a {
+  color: #495057;
+  transition: color 0.2s;
+  display: block;
+}
+
+.archive-month a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+
+/* Error image fallback */
+img[onerror] {
+  object-fit: cover;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fallback untuk gambar yang tidak ada */
+.img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  color: #6c757d;
+  height: 100%;
+  min-height: 150px;
+}
+
+/* Style untuk teks brand */
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+  
+  .navbar-brand img {
+    height: 50px !important;
+  }
+}
+
+/* Memastikan logo dan teks sejajar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .detail-header h1 {
+    font-size: 2rem;
+  }
+  
+  .news-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .share-buttons {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-header {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  
+  .detail-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .news-content {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,141 @@
+/* ========== GLOBAL VARIABLES & RESETS ========== */
+:root {
+  --primary: #28a745;
+  --secondary: #20c997;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --dark: #1e5631;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 56px; /* Untuk fixed navbar */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* ========== GLOBAL COMPONENTS ========== */
+/* Navbar */
+.navbar {
+  background-color: var(--dark) !important;
+  transition: all 0.3s;
+}
+
+.navbar-logo {
+  height: 50px;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s;
+  background-color: transparent;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 0.5rem;
+  /* overflow: hidden; */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  z-index: 1;
+}
+
+/* Footer */
+.bg-gray-800 {
+  background-color: var(--dark) !important;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  text-decoration: none;
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  display: none;
+  width: 3.25rem;
+  height: 3.25rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(40, 167, 69, 0.8);
+  line-height: 3rem;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: #fff;
+  background: var(--primary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+}

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi | Panti Asuhan Nurul Badri</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+  
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/donasi.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item active"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-donasi d-flex align-items-center text-white" role="banner">
+    <div class="container text-center">
+          <h1 class="display-4 font-weight-bold mb-3">Bantu Wujudkan Mimpi Mereka</h1>
+          <p class="lead mb-4">Setiap donasi Anda memberikan harapan untuk masa depan yang lebih baik</p>
+            <a href="#transparansi" class="btn btn-outline-light btn-lg">Lihat Laporan Keuangan</a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-light">
+    <div class="container">
+      <ol class="breadcrumb bg-transparent mb-0 py-3">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Donasi</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Dampak Donasi -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Dampak Donasi Anda</h2>
+          <p class="lead">Setiap kontribusi membantu menciptakan lingkungan yang aman, bersih, dan penuh harapan bagi anak-anak panti asuhan.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Kebutuhan Sehari-hari -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-warning-light mb-4">
+                <i class="fas fa-bread-slice fa-2x text-warning"></i>
+              </div>
+              <h3 class="h5">Kebutuhan Sehari-hari</h3>
+              <p>Donasi membantu memenuhi kebutuhan dasar seperti makanan, air minum, pakaian, dan perlengkapan kebersihan anak-anak setiap harinya.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operasional Panti -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-info-light mb-4">
+                <i class="fas fa-tools fa-2x text-info"></i>
+              </div>
+              <h3 class="h5">Operasional Panti</h3>
+              <p>Dukungan Anda membantu membayar listrik, air, galon, gas, pengelolaan sampah, serta pemeliharaan fasilitas panti agar tetap nyaman.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pendidikan dan Kegiatan -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-success-light mb-4">
+                <i class="fas fa-user-graduate fa-2x text-success"></i>
+              </div>
+              <h3 class="h5">Pendidikan & Kegiatan Anak</h3>
+              <p>Donasi juga digunakan untuk mendukung pendidikan formal dan non-formal, kegiatan bimbingan, dan pembinaan karakter anak-anak.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bentuk Dukungan Yang Diterima -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Bentuk Dukungan yang Kami Terima</h2>
+          <p class="lead">Setiap bantuan sangat berarti bagi kami, baik untuk kebutuhan harian maupun kegiatan khusus</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Dukungan Finansial -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-success mb-3">
+                <i class="fas fa-hand-holding-usd fa-2x text-white"></i>
+              </div>
+              <h4>Dukungan Dana</h4>
+              <p>Digunakan untuk kebutuhan pendidikan, kesehatan, dan kegiatan panti seperti perbaikan gizi atau pelatihan anak-anak.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sumbangan Barang -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-secondary mb-3">
+                <i class="fas fa-box fa-2x text-white"></i>
+              </div>
+              <h4>Sumbangan Barang</h4>
+              <p>Seperti perlengkapan mandi, alat tulis, pakaian, alat elektonik(Komputer, Mesin Cuci, AC, Kipas, Vacum Cleaner(untuk karpet), dan lain-lain)atau alat penunjang kegiatan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dukungan Makanan -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-warning mb-3">
+                <i class="fas fa-apple-alt fa-2x text-white"></i>
+              </div>
+              <h4>Dukungan Makanan</h4>
+              <p>Seperti sembako, makanan siap saji, atau makanan khusus dalam kegiatan tertentu.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relawan & Tenaga -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-info mb-3">
+                <i class="fas fa-hands-helping fa-2x text-white"></i>
+              </div>
+              <h4>Relawan & Tenaga</h4>
+              <p>Anda bisa mendukung kami dengan menjadi relawan, mengajar, atau membantu dalam kegiatan sosial kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Regular Donor Section -->
+  <section class="py-5 bg-primary text-white" id="donatur-tetap">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <h2 class="mb-3">Jadi Donatur Tetap</h2>
+          <p class="lead mb-4">Dengan menjadi donatur tetap, Anda memberikan dukungan berkelanjutan untuk masa depan anak-anak asuh kami.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-light btn-lg" href="https://forms.gle/qs7kP1FYtaDvwRBA6" target="_blank">
+              Daftar Sekarang
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-white text-dark p-4 shadow">
+            <h4 class="mb-3">Mengapa Menjadi Donatur Itu Berarti:</h4>
+            <ul class="fa-ul">
+              <li class="mb-2"><span class="fa-li"><i class="fas fa-heart text-success"></i></span> Memberi harapan dan masa depan bagi anak-anak yatim</li>
+              <li class="mb-2"><span class="fa-li"><i class="fas fa-hand-holding-usd text-success"></i></span> Donasi digunakan langsung untuk kebutuhan pendidikan, makanan, dan tempat tinggal</li>
+              <li class="mb-2"><span class="fa-li"><i class="fas fa-smile text-success"></i></span> Membantu menciptakan lingkungan yang penuh kasih dan perhatian</li>
+              <li class="mb-2"><span class="fa-li"><i class="fas fa-users text-success"></i></span> Menjadi bagian dari komunitas peduli sesama</li>
+              <li><span class="fa-li"><i class="fas fa-hands text-success"></i></span> Setiap donasi membawa dampak nyata dan langsung terasa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Methods -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Cara Berdonasi</h2>
+          <p class="lead">Beberapa metode yang bisa Anda gunakan untuk berdonasi</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-tabs justify-content-center" id="donationTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="bank-tab" data-toggle="tab" data-target="#bank" role="button" style="cursor: pointer;">Transfer Bank</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ewallet-tab" data-toggle="tab" data-target="#ewallet" role="button" style="cursor: pointer;">E-Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="direct-tab" data-toggle="tab" data-target="#direct" role="button" style="cursor: pointer;">Donasi Langsung</a>
+            </li>
+          </ul>
+          
+          <div class="tab-content mt-4" id="donationTabsContent">
+            <!-- Bank Transfer -->
+            <div class="tab-pane fade show active" id="bank" role="tabpanel">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <h4 class="mb-4">Transfer Bank</h4>
+                      <p>Silakan transfer ke salah satu rekening berikut:</p>
+                      
+                      <div class="bank-list">
+                        <div class="media mb-3">
+                          <img src="./img/logo/bsi.webp" class="mr-3 bank-logo" alt="BSI">
+                          <div class="media-body">
+                            <h5 class="mt-0">BSI</h5>
+                            <p class="mb-1">7137471994</p>
+                            <small class="text-muted">a.n. Yayasan Nurul Badri</small>
+                          </div>
+                        </div>
+                        
+                        <div class="media mb-3">
+                          <img src="./img/logo/bank-muamalat-seeklogo.png" class="mr-3 bank-logo" alt="Muamalat">
+                          <div class="media-body">
+                            <h5 class="mt-0">Muamalat</h5>
+                            <p class="mb-1">3050125019</p>
+                            <small class="text-muted">a.n. Panti Asuhan Nurul Badri</small>
+                          </div>
+                        </div>
+                        
+                        <!-- <div class="media">
+                          <img src="./img/logo/bni.png" class="mr-3 bank-logo" alt="BNI">
+                          <div class="media-body">
+                            <h5 class="mt-0">BNI</h5>
+                            <p class="mb-1">567 890 1234</p>
+                            <small class="text-muted">a.n. Yayasan Nurul Badri</small>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="alert alert-info">
+                        <h5><i class="fas fa-info-circle mr-2"></i> Instruksi Penting</h5>
+                        <ul class="mb-0 pl-4">
+                          <li>Gunakan kode unik untuk memudahkan verifikasi</li>
+                          <li>Contoh: Donasi Rp 100.000, transfer Rp 100.123</li>
+                          <li>Konfirmasi via WhatsApp ke 0812-3456-7890</li>
+                          <li>Format: NAMA#NOMINAL#TANGGAL</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- E-Wallet -->
+            <div class="tab-pane fade" id="ewallet" role="tabpanel">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <h4 class="mb-4">E-Wallet</h4>
+                      <p>Scan QR code atau transfer langsung ke nomor berikut:</p>
+                      
+                      <div class="row">
+                        <!-- <div class="col-6 mb-3">
+                          <div class="text-center">
+                            <img src="img/ewallet/dana.png" class="img-fluid mb-2 ewallet-logo" alt="DANA">
+                            <p class="mb-1 font-weight-bold">0812-3456-7890</p>
+                            <small class="text-muted">a.n. Yayasan Nurul Badri</small>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-6 mb-3">
+                          <div class="text-center">
+                            <img src="img/ewallet/ovo.png" class="img-fluid mb-2 ewallet-logo" alt="OVO">
+                            <p class="mb-1 font-weight-bold">0812-3456-7890</p>
+                            <small class="text-muted">a.n. Yayasan Nurul Badri</small>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-6">
+                          <div class="text-center">
+                            <img src="img/ewallet/linkaja.png" class="img-fluid mb-2 ewallet-logo" alt="LinkAja">
+                            <p class="mb-1 font-weight-bold">0812-3456-7890</p>
+                            <small class="text-muted">a.n. Yayasan Nurul Badri</small>
+                          </div>
+                        </div> -->
+                        <div class="col-12">
+                          <div class="text-center">
+                            <img src="./img/logo/qris.png" class="img-fluid mb-2 ewallet-logo" alt="QRIS">
+                            <p class="mb-1 font-weight-bold">Scan Kode QR</p>
+                            <img src="./img/logo/fotoqris.jpg" class="img-fluid qr-code" stalt="QR Code">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="alert alert-info">
+                        <h5><i class="fas fa-info-circle mr-2"></i> Instruksi Penting</h5>
+                        <ul class="mb-0 pl-4">
+                          <li>Tambahkan nominal unik untuk verifikasi</li>
+                          <li>Contoh: Donasi Rp 50.000, transfer Rp 50.123</li>
+                          <li>Konfirmasi via WhatsApp ke 0812-3456-7890</li>
+                          <li>Format: NAMA#NOMINAL#TANGGAL</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Direct Donation -->
+            <div class="tab-pane fade" id="direct" role="tabpanel">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <h4 class="mb-4">Donasi Langsung</h4>
+                      <p>Anda bisa mengunjungi panti asuhan kami untuk berdonasi langsung:</p>
+                      
+                      <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt text-success mr-2"></i> Alamat</h5>
+                        <p>Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</p>
+                      </div>
+                      
+                      <div class="mb-4">
+                        <h5><i class="fas fa-clock text-success mr-2"></i> Jam Kunjungan</h5>
+                        <p>Senin-Jumat: 09.00-16.00<br>Sabtu: 09.00-14.00</p>
+                      </div>
+                      
+                      <div class="mb-4">
+                        <h5><i class="fas fa-phone text-success mr-2"></i> Kontak</h5>
+                        <p class="mb-1">+62 896-0784-6603 (Ibu Aida)</p>
+                        <p>+62 896-0784-6603 (Ibu Aida)</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-4">
+                        <h5><i class="fas fa-box-open text-success mr-2"></i> Donasi Barang</h5>
+                        <p>Kami menerima donasi barang dalam kondisi baik:</p>
+                        <ul>
+                          <li>Pakaian layak pakai</li>
+                          <li>Buku bacaan anak</li>
+                          <li>Alat tulis dan sekolah</li>
+                          <li>Makanan non-perishable</li>
+                          <li>Perlengkapan mandi</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="alert alert-info">
+                        <h5><i class="fas fa-info-circle mr-2"></i> Catatan</h5>
+                        <p>Untuk donasi besar (lebih dari 5 kardus), harap hubungi kami terlebih dahulu untuk koordinasi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Form Donation Section -->
+  <!-- <section class="py-5 bg-light" id="donasi-sekarang">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow">
+            <div class="card-header bg-success text-white">
+              <h3 class="mb-0">Formulir Donasi Online</h3>
+            </div>
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h4 class="mb-4">Isi Formulir Donasi</h4>
+                  <p>Silakan isi formulir Google berikut untuk melakukan donasi. Data Anda akan kami gunakan untuk:</p>
+                  <ul class="mb-4">
+                    <li>Mengirimkan konfirmasi donasi</li>
+                    <li>Memberikan laporan penggunaan dana</li>
+                    <li>Mengirimkan informasi program kami</li>
+                  </ul>
+                  <div class="alert alert-info">
+                    <i class="fas fa-info-circle mr-2"></i> Setelah mengisi form, Anda akan menerima email instruksi pembayaran.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Replace with your actual Google Form embed code -->
+                    <!-- <iframe src="https://forms.gle/v1BqAzuREL9c23Zr5" 
+                            frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
+                  </div>
+                  <div class="text-center mt-3">
+                    <p>Tidak bisa mengakses form? <a href="https://forms.gle/v1BqAzuREL9c23Zr5" target="_blank">Buka di tab baru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> --> 
+
+  <!-- Transparency Section -->
+  <section class="py-5" id="transparansi">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Transparansi Keuangan</h2>
+          <p class="lead">Kami berkomitmen untuk transparan dalam penggunaan dana donasi</p>
+        </div>
+      </div>
+      
+      <div class="row mb-5">
+  <div class="col-md-6 mb-4 mb-md-0">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h4 class="mb-4">Alokasi Dana Donasi</h4>
+        <div class="chart-container">
+          <canvas id="donationChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <h4 class="mb-4">Ringkasan Keuangan Triwulan</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Periode</th>
+                    <th>Total Donasi Masuk</th>
+                    <th>Pengeluaran Utama</th>
+                    <th>Sisa Dana</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jan–Mar 2025</td>
+                    <td>Rp 7.500.000</td>
+                    <td>Makan, listrik, pendidikan</td>
+                    <td>Rp 200.000</td>
+                  </tr>
+                  <tr>
+                    <td>Apr–Mei 2025</td>
+                    <td>Rp 4.700.000</td>
+                    <td>Ramadhan, operasional, obat</td>
+                    <td>Rp 300.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Catatan yang bisa di-toggle -->
+            <div class="toggle-note mt-4">
+              <button class="toggle-note-btn btn btn-sm btn-warning">
+                <i class="fas fa-chevron-down"></i> Tampilkan Catatan
+              </button>
+              <div class="note-content alert alert-warning mt-2 d-none">
+                <strong>Catatan:</strong> Saat ini kami belum memiliki laporan bulanan profesional karena keterbatasan tenaga. Namun, kami berkomitmen untuk transparan dan menyajikan ringkasan keuangan setiap 3 bulan. Terima kasih atas kepercayaan dan pengertiannya.
+              </div>
+            </div>
+
+            <div class="text-center mt-3">
+              <a href="#" target="_blank" class="btn btn-success">Lihat Laporan Lengkap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Kegiatan yang Membuka Dukungan Publik -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row mb-5 text-center">
+        <div class="col">
+          <h2 class="section-title">Kegiatan yang Membuka Dukungan Publik</h2>
+          <p class="lead">Kami membuka partisipasi publik untuk kegiatan musiman, perayaan, dan kegiatan anak lainnya.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Kegiatan 1 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-utensils fa-2x text-primary"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Program Perbaikan Gizi</h5>
+              <p>Kegiatan peningkatan gizi anak-anak. Dukungan bisa berupa makanan sehat, tenaga medis, atau sponsor program.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 2 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-book-reader fa-2x text-success"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Belajar Bareng</h5>
+              <p>Kegiatan belajar informal seperti membaca, menulis, hingga pelatihan komputer. Dukungan berupa relawan atau alat belajar.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 3 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-calendar-alt fa-2x text-warning"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Hari Besar & Acara Sosial</h5>
+              <p>Dukungan untuk acara seperti ulang tahun panti, silaturahmi, atau hari besar lainnya dalam bentuk bingkisan, makanan, dan kehadiran.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 4 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-moon fa-2x text-info"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Kegiatan Ramadhan & Buka Bersama</h5>
+              <p>Buka puasa, sahur bersama, kajian islami, dan pembagian takjil selama Ramadhan. Anda bisa bantu dengan konsumsi dan logistik.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 5 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-gift fa-2x text-success"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Idul Fitri & Idul Adha</h5>
+              <p>Dukungan seperti daging kurban, sembako, baju lebaran, dan kue untuk merayakan bersama anak-anak panti.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 6 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-flag fa-2x text-danger"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Perayaan 17 Agustus & Hari Nasional</h5>
+              <p>Mendukung lomba-lomba, konsumsi, dan hadiah dalam rangka kemerdekaan dan hari nasional lainnya.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 7 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-child fa-2x text-primary"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Hari Anak Nasional</h5>
+              <p>Diisi dengan acara hiburan, edukasi, dan apresiasi anak. Dukungan berupa permainan, konsumsi, atau sponsorship acara.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 8 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-bus fa-2x text-secondary"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Outing & Kunjungan Edukasi</h5>
+              <p>Kunjungan ke kebun binatang, museum, dan tempat edukatif lainnya. Donasi bisa berupa tiket, transportasi, atau konsumsi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 9 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-chalkboard-teacher fa-2x text-info"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Pelatihan Keterampilan</h5>
+              <p>Pelatihan praktis seperti menjahit, memasak, atau komputer. Kami butuh mentor dan alat pelatihan.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kegiatan 10 -->
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="d-flex align-items-start w-100 border-bottom pb-4 dukungan-item">
+            <div class="mr-4">
+              <i class="fas fa-hands-helping fa-2x text-warning"></i>
+            </div>
+            <div>
+              <h5 class="font-weight-bold">Kegiatan Sosial Masyarakat</h5>
+              <p>Anak-anak juga diajak berbagi, seperti bersih lingkungan atau kunjungan ke lansia. Anda bisa mendukung sebagai relawan atau logistik kegiatan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <p class="text-muted">Untuk ikut serta dalam kegiatan di atas, silakan hubungi kami atau datang langsung ke panti. Setiap partisipasi sangat kami hargai. 🤝</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Donasi akan digunakan untuk apa saja?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Donasi akan digunakan untuk membiayai operasional panti seperti listrik, air, gas, dan kebersihan. Selain itu juga untuk memenuhi kebutuhan harian seperti makan, mandi, pakaian, dan pendidikan formal maupun non-formal anak-anak.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Bagaimana saya tahu donasi saya digunakan dengan baik?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Kami menyediakan laporan keuangan bulanan yang dapat diakses di halaman Transparansi Keuangan di website. Di sana Anda bisa melihat jumlah pemasukan dan pengeluaran panti secara rutin.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Apakah saya bisa berdonasi tanpa menjadi donatur tetap?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Tentu bisa. Donasi satu kali sangat kami apresiasi dan tetap membawa dampak besar. Anda juga bisa memilih kegiatan tertentu untuk didukung secara fleksibel.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 (tetap sama) -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Bagaimana cara donasi barang bekas layak pakai?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Anda bisa mengantar langsung ke panti atau menghubungi kami untuk penjemputan (minimal 5 kardus). Kami menerima pakaian layak pakai, buku, mainan edukatif, dan perlengkapan rumah tangga. Barang akan kami sortir dan distribusikan sesuai kebutuhan.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-success text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Tidak Ada Donasi yang Terlalu Kecil</h2>
+      <p class="lead mb-5">Setiap rupiah yang Anda berikan akan memberikan dampak besar bagi kehidupan anak-anak</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="#donatur-tetap" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-calendar-alt mr-2"></i> Jadi Donatur Rutin
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-gray-800 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i>&nbsp; &nbsp; &nbsp; </i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Regular Donor Modal -->
+  <!-- <div class="modal fade" id="donaturTetapModal" tabindex="-1" role="dialog" aria-labelledby="donaturTetapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="donaturTetapModalLabel">Formulir Donatur Tetap</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9"> -->
+            <!-- Replace with your actual Google Form embed code for regular donor -->
+            <!-- <iframe src="https://forms.gle/qs7kP1FYtaDvwRBA6" 
+                    frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
+          </div>
+          <div class="text-center mt-3">
+            <p>Tidak bisa mengakses form? <a href="https://forms.gle/qs7kP1FYtaDvwRBA6" target="_blank">Buka di tab baru</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Chart.js -->
+  <script src="assets/vendor/chart.js/Chart.min.js"></script>
+  
+  <!-- SB Admin 2 JavaScript -->
+  <script src="assets/js/sb-admin-2.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/donasi.js"></script>
+</body>
+</html>

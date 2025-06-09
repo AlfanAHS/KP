@@ -1,0 +1,13 @@
+{
+  "manual": {
+    "pompa": false
+  },
+  "otomatis": {
+    "jadwal": [
+      { "jam": 6, "menit": 0 },
+      { "jam": 12, "menit": 0 },
+      { "jam": 17, "menit": 30 }
+    ]
+  }
+}
+

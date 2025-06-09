@@ -1,0 +1,72 @@
+/* Header Galeri */
+.header-galeri {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/slideshow/slide1.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 56px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Filter Button */
+.btn-group-toggle .btn-outline-success {
+    border-radius: 20px !important;
+    margin: 2px;
+}
+
+.btn-group-toggle .btn-outline-success.active {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Galeri Item */
+.foto-item .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-item .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Card */
+.video-item .card {
+    transition: transform 0.3s ease;
+}
+
+.video-item .card:hover {
+    transform: translateY(-3px);
+}
+
+/* Lightbox Caption */
+.lightbox-caption {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-galeri {
+        height: 300px;
+    }
+    
+    .btn-group-toggle .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.pagination .page-link {
+    color: #28a745;
+}
+
+.pagination .page-link:hover {
+    color: #218838;
+}

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relawan | Panti Asuhan Nurul Badri</title>
+  <meta name="description" content="Bergabunglah sebagai relawan di Panti Asuhan Nurul Badri. Bantu anak-anak kurang beruntung dengan waktu dan keahlian Anda.">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="assets/vendor/fontawesome-free/css/all.min.css" as="style">
+  <link rel="preload" href="assets/css/sb-admin-2.min.css" as="style">
+  
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+  
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/relawan.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item active"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-relawan d-flex align-items-center text-white" role="banner">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold mb-3">Jadi Relawan Panti Asuhan Nurul Badri</h1>
+      <p class="lead mb-4">Berkontribusi langsung untuk masa depan anak-anak kurang beruntung</p>
+      <a href="#daftar-relawan" class="btn btn-outline-light btn-lg" aria-label="Lihat galeri terbaru">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-light">
+    <div class="container">
+      <ol class="breadcrumb bg-transparent mb-0 py-3">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Relawan</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Why Volunteer Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Mengapa Jadi Relawan?</h2>
+          <p class="lead">Bergabunglah dengan komunitas relawan kami dan buat perbedaan nyata</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-heart fa-3x text-danger"></i>
+              </div>
+              <h3 class="h5">Dampak Langsung</h3>
+              <p>Lihat perubahan nyata dalam kehidupan anak-anak yang Anda bantu</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-users fa-3x text-primary"></i>
+              </div>
+              <h3 class="h5">Komunitas Peduli</h3>
+              <p>Bertemu dengan orang-orang inspiratif dengan semangat yang sama</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-brain fa-3x text-info"></i>
+              </div>
+              <h3 class="h5">Pengembangan Diri</h3>
+              <p>Tingkatkan keterampilan sosial, kepemimpinan, dan empati</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-award fa-3x text-warning"></i>
+              </div>
+              <h3 class="h5">Pengalaman Berharga</h3>
+              <p>Dapatkan sertifikat dan pengalaman yang berarti untuk CV Anda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Programs Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Program Relawan Kami</h2>
+          <p class="lead">Pilih peran yang sesuai dengan minat dan keahlian Anda</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Program 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-chalkboard-teacher fa-3x text-success"></i>
+              </div>
+              <h3 class="h4 mb-3">Relawan Pengajar</h3>
+              <p class="mb-4">Mengajar mata pelajaran sekolah atau keterampilan khusus untuk anak-anak panti</p>
+              <div class="program-details mb-3">
+                <p><strong>Komitmen:</strong> 2x seminggu</p>
+                <p><strong>Kebutuhan:</strong> Sabtu-Minggu</p>
+              </div>
+              <a href="#daftar-relawan" class="btn btn-outline-success btn-sm">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Program 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-hands-helping fa-3x text-success"></i>
+              </div>
+              <h3 class="h4 mb-3">Relawan Pendamping</h3>
+              <p class="mb-4">Mendampingi aktivitas harian anak-anak dan memberikan perhatian individual</p>
+              <div class="program-details mb-3">
+                <p><strong>Komitmen:</strong> Fleksibel</p>
+                <p><strong>Kebutuhan:</strong> Setiap hari</p>
+              </div>
+              <a href="#daftar-relawan" class="btn btn-outline-success btn-sm">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Program 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-user-md fa-3x text-success"></i>
+              </div>
+              <h3 class="h4 mb-3">Relawan Khusus</h3>
+              <p class="mb-4">Ahli di bidang tertentu (dokter, psikolog, dll) untuk memberikan layanan profesional</p>
+              <div class="program-details mb-3">
+                <p><strong>Komitmen:</strong> Sesuai jadwal</p>
+                <p><strong>Kebutuhan:</strong> Spesialis</p>
+              </div>
+              <a href="#daftar-relawan" class="btn btn-outline-success btn-sm">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Program 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-calendar-alt fa-3x text-success"></i>
+              </div>
+              <h3 class="h4 mb-3">Relawan Event</h3>
+              <p class="mb-4">Membantu acara khusus panti seperti hari raya, ulang tahun, atau kegiatan outdoor</p>
+              <div class="program-details mb-3">
+                <p><strong>Komitmen:</strong> Per event</p>
+                <p><strong>Kebutuhan:</strong> Weekend</p>
+              </div>
+              <a href="#daftar-relawan" class="btn btn-outline-success btn-sm">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="mb-4">Persyaratan Menjadi Relawan</h2>
+          <ul class="list-check">
+            <li>Usia minimal 18 tahun</li>
+            <li>Bersedia berkomitmen minimal 3 bulan</li>
+            <li>Mengisi formulir pendaftaran lengkap</li>
+            <li>Melampirkan surat keterangan sehat</li>
+            <li>Menandatangani surat pernyataan bersedia mengikuti aturan panti</li>
+            <li>Untuk relawan pengajar: memiliki kemampuan mengajar yang memadai</li>
+          </ul>
+          <div class="mt-4">
+            <a href="https://drive.google.com/file/d/1xyTWgtoM0vkQrXLH0tQ8DW8pKpfurxft/view?usp=sharing" class="btn btn-outline-success" target="_blank">
+              <i class="fas fa-download mr-2"></i> Download Panduan Relawan
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow">
+            <img src="./img/slideshow/relawan.jpg" alt="Relawan Beraktivitas dengan Anak-anak" class="img-fluid rounded" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <!-- <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Kata Relawan Kami</h2>
+          <p class="lead">Pengalaman langsung dari mereka yang telah bergabung</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div id="volunteerTestimonials" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner"> -->
+              <!-- Testimoni 1 -->
+              <!-- <div class="carousel-item active">
+                <div class="testimonial-card p-4 p-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-md-3 text-center mb-4 mb-md-0">
+                      <img src="/img/testimoni/testimoni-7.jpg" class="rounded-circle" alt="Dian Sastrowardoyo - Relawan Pengajar" loading="lazy">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                      </div>
+                      <blockquote class="blockquote">
+                        <p>"Menjadi relawan di Panti Asuhan Nurul Badri mengubah cara pandang saya tentang kehidupan. Melihat senyum anak-anak yang tulus adalah hadiah terbaik."</p>
+                        <footer class="blockquote-footer">Dian Sastrowardoyo, <cite>Relawan Pengajar sejak 2022</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              
+              <!-- Testimoni 2 -->
+              <!-- <div class="carousel-item">
+                <div class="testimonial-card p-4 p-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-md-3 text-center mb-4 mb-md-0">
+                      <img src="/img/testimoni/testimoni-8.png" class="rounded-circle" alt="Budi Santoso - Relawan Pendamping" loading="lazy">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                      <blockquote class="blockquote">
+                        <p>"Saya awalnya hanya ingin mengisi waktu luang, tapi ternyata menjadi relawan memberi saya keluarga baru. Anak-anak di sini mengajari saya arti ketulusan."</p>
+                        <footer class="blockquote-footer">Budi Santoso, <cite>Relawan Pendamping sejak 2021</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              
+              <!-- Testimoni 3 -->
+              <!-- <div class="carousel-item">
+                <div class="testimonial-card p-4 p-md-5">
+                  <div class="row align-items-center">
+                    <div class="col-md-3 text-center mb-4 mb-md-0">
+                      <img src="/img/testimoni/testimoni-9.png" class="rounded-circle" alt="Dr. Siti Rahma - Relawan Khusus" loading="lazy">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                      </div>
+                      <blockquote class="blockquote">
+                        <p>"Sebagai psikolog, saya sangat menghargai sistem pendampingan relawan di sini. Mereka benar-benar peduli dengan perkembangan psikologis anak-anak."</p>
+                        <footer class="blockquote-footer">Dr. Siti Rahma, <cite>Relawan Khusus Psikolog</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#volunteerTestimonials" role="button" data-slide="prev" aria-label="Previous testimonial">
+              <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#volunteerTestimonials" role="button" data-slide="next" aria-label="Next testimonial">
+              <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Volunteer Form Section -->
+  <section class="py-5" id="daftar-relawan">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow">
+            <div class="card-header bg-success text-white">
+              <h3 class="mb-0">Formulir Pendaftaran Relawan</h3>
+            </div>
+            <div class="card-body p-4 p-md-5">
+              <form id="volunteerForm" action="https://formspree.io/f/xdkgydee" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="Pendaftaran Relawan Baru - Panti Asuhan Nurul Badri">
+                <input type="hidden" name="_language" value="id">
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="namaLengkap">Nama Lengkap <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="noHp">Nomor WhatsApp/Telepon <span class="text-danger">*</span></label>
+                      <input type="tel" class="form-control" id="noHp" name="noHp" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="usia">Usia <span class="text-danger">*</span></label>
+                      <input type="number" class="form-control" id="usia" name="usia" min="18" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="pekerjaan">Pekerjaan <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="program">Program Relawan yang Diminati <span class="text-danger">*</span></label>
+                      <select class="form-control" id="program" name="program" required>
+                        <option value="" disabled selected>Pilih Program</option>
+                        <option value="pengajar">Relawan Pengajar</option>
+                        <option value="pendamping">Relawan Pendamping</option>
+                        <option value="khusus">Relawan Khusus</option>
+                        <option value="event">Relawan Event</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="keterampilan">Keterampilan/Kemampuan Khusus</label>
+                  <textarea class="form-control" id="keterampilan" name="keterampilan" rows="2" placeholder="Contoh: Mengajar matematika, bermain musik, konseling, dll"></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label for="pengalaman">Pengalaman Relawan Sebelumnya (Jika Ada)</label>
+                  <textarea class="form-control" id="pengalaman" name="pengalaman" rows="2"></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label for="alasan">Alasan Ingin Menjadi Relawan <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="alasan" name="alasan" rows="3" required></textarea>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="ketersediaan">Hari/Tanggal Tersedia <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="ketersediaan" name="ketersediaan" required placeholder="Contoh: Sabtu-Minggu, 09.00-14.00">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="komitmen">Komitmen (Bulan) <span class="text-danger">*</span></label>
+                      <select class="form-control" id="komitmen" name="komitmen" required>
+                        <option value="3">3 Bulan</option>
+                        <option value="6">6 Bulan</option>
+                        <option value="12" selected>1 Tahun</option>
+                        <option value="24">2 Tahun</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Link Google Drive Dokumen Pendukung</label>
+                  <div class="mb-2">
+                    <label for="cvLink">Link CV/Resume (Opsional)</label>
+                    <input type="url" class="form-control" id="cvLink" name="cvLink" placeholder="https://drive.google.com/...">
+                  </div>
+                  <div>
+                    <label for="suratSehatLink">Link Surat Keterangan Sehat (Wajib) <span class="text-danger">*</span></label>
+                    <input type="url" class="form-control" id="suratSehatLink" name="suratSehatLink" required placeholder="https://drive.google.com/...">
+                  </div>
+                  <small class="form-text text-muted">Pastikan link Google Drive memiliki akses 'Anyone with the link can view'</small>
+                </div>
+                
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="agreeTerms" name="agreeTerms" required>
+                  <label class="form-check-label" for="agreeTerms">Saya menyetujui syarat dan ketentuan menjadi relawan Panti Asuhan Nurul Badri <span class="text-danger">*</span></label>
+                </div>
+                
+                <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-success btn-lg px-5" id="submitBtn">Kirim Pendaftaran</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Kapan jadwal kegiatan mengajar?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Kegiatan mengajar dilaksanakan setiap hari Minggu pukul 08.00–12.00 di panti asuhan. 
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Apakah saya bisa memilih kelas yang ingin saya ajar?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Ya, relawan pengajar dapat memilih kelas yang ingin diajar, mulai dari PAUD hingga SMP kelas 3, sesuai dengan kenyamanan dan kemampuannya.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Apakah ada kegiatan selain mengajar?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Ya, ada kegiatan tambahan seperti acara di panti, namun tidak memiliki jadwal tetap. Kegiatan ini biasanya diumumkan mendadak sesuai kebutuhan atau permintaan dari pihak panti.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fas fa-question-circle text-success mr-2"></i> Apakah ada pelatihan untuk relawan pengajar?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Saat ini belum ada pelatihan formal, namun relawan dapat berdiskusi dengan koordinator pengajar dan relawan lainnya untuk mendapatkan panduan dan berbagi pengalaman sebelum mulai mengajar.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-gray-800 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i>&nbsp; &nbsp; &nbsp; </i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top" aria-label="Scroll to top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- SB Admin 2 JavaScript -->
+  <script src="assets/js/sb-admin-2.min.js"></script>
+  
+  <!-- SweetAlert2 for notifications -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/relawan.js"></script>
+</body>
+</html>

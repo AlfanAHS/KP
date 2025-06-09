@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri | Panti Asuhan Nurul Badri</title>
+  <meta name="description" content="Galeri kegiatan anak-anak Panti Asuhan Nurul Badri. Lihat dokumentasi foto dan video keseharian serta momen spesial.">
+  <meta name="keywords" content="panti asuhan, galeri panti, anak yatim, donasi, kegiatan sosial">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galeri Kegiatan - Panti Asuhan Nurul Badri">
+  <meta property="og:description" content="Lihat dokumentasi kegiatan anak-anak Panti Asuhan Nurul Badri.">
+  <meta property="og:image" content="URL-thumbnail-galeri.jpg">
+
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+  
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="assets/vendor/lightbox/css/lightbox.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/galeri.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Loading Indicator CSS -->
+<style>
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  z-index: 10;
+}
+</style>
+</head>
+<body id="page-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item active"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-galeri d-flex align-items-center text-white" role="banner">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold mb-3">Galeri Kegiatan</h1>
+      <p class="lead mb-4">Dokumentasi kegiatan sehari-hari anak-anak panti, kunjungan donatur, dan momen istimewa bersama keluarga besar Panti Asuhan Nurul Badri</p>
+      <a href="#galeri" class="btn btn-outline-light btn-lg" aria-label="Lihat galeri terbaru">Lihat Galeri</a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-light">
+    <div class="container">
+      <ol class="breadcrumb bg-transparent mb-0 py-3">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Galeri</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="py-5">
+    <div class="container" id="galeri">
+      <!-- Tab Menu -->
+      <ul class="nav gallery-tabs" id="galleryTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="all-tab" data-toggle="tab" data-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
+            <i class="fas fa-th mr-1"></i> Semua
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="photo-tab" data-toggle="tab" data-target="#photo" type="button" role="tab" aria-controls="photo" aria-selected="false">
+            <i class="fas fa-image mr-1"></i> Foto
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="video-tab" data-toggle="tab" data-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false">
+            <i class="fas fa-video mr-1"></i> Video
+          </button>
+        </li>
+      </ul>
+      
+      <!-- Content Limit -->
+      <div class="content-limit mb-4">
+        <span>Tampilkan:</span>
+        <select class="form-control-sm" id="contentLimit">
+          <option value="12">12</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <span>konten per halaman</span>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="galleryTabContent">
+        <!-- All Content -->
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+          <div class="gallery-container" id="allGallery"></div>
+        </div>
+        
+        <!-- Photo Content -->
+        <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+          <div class="gallery-container" id="photoGallery"></div>
+        </div>
+        
+        <!-- Video Content -->
+        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+          <div class="gallery-container" id="videoGallery"></div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="pagination-wrapper">
+        <nav aria-label="Page navigation">
+          <ul class="pagination" id="pagination">
+            <!-- Pagination akan diisi oleh JavaScript -->
+          </ul>
+        </nav>
+        <div class="page-info" id="pageInfo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Modal -->
+  <!-- Media Modal -->
+<div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!-- Top Toolbar -->
+      <div class="modal-toolbar">
+        <div class="toolbar-left">
+          <button class="toolbar-btn" id="shareBtn" title="Share"><i class="fas fa-share-alt"></i></button>
+          <button class="toolbar-btn" id="copyBtn" title="Copy"><i class="fas fa-copy"></i></button>
+        </div>
+        <div class="toolbar-right">
+          <button class="toolbar-btn" id="zoomOutBtn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+          <button class="toolbar-btn" id="zoomInBtn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+          <button class="toolbar-btn" id="fullscreenBtn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+          <button class="toolbar-btn" id="playSlideshowBtn" title="Play Slideshow"><i class="fas fa-play"></i></button>
+          <button class="toolbar-btn" id="downloadBtn" title="Download"><i class="fas fa-download"></i></button>
+          <button class="toolbar-btn" id="closeModalBtn" title="Close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      
+      <!-- Navigation Arrows -->
+      <div class="modal-nav-arrow left" id="prevMediaBtn"><i class="fas fa-chevron-left"></i></div>
+      <div class="modal-nav-arrow right" id="nextMediaBtn"><i class="fas fa-chevron-right"></i></div>
+      
+      <!-- Media Content -->
+      <div class="media-content-container">
+        <div class="media-content p-0">
+          <img id="modalMediaImage" class="img-fluid d-none" src="" alt="">
+          <div class="video-container-fluid d-none" id="modalMediaVideo"></div>
+        </div>
+      </div>
+      
+      <!-- Thumbnail Preview - Struktur Baru -->
+      <div class="lg-thumb-outer lg-thumb-open">
+        <button class="lg-toogle-thumb lg-icon"><i class="fas fa-th"></i></button>
+        <div class="lg-thumb-scroll">
+          <div class="lg-thumb lg-group"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-gray-800 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i>&nbsp; &nbsp; &nbsp; </i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Lightbox JS -->
+  <script src="assets/vendor/lightbox/js/lightbox.min.js"></script>
+  
+  <!-- SB Admin 2 JavaScript -->
+  <script src="assets/js/sb-admin-2.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/galeri.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Panti Asuhan Nurul Badri - Memberikan rumah dan pendidikan untuk anak yatim dan kurang mampu sejak 2010" />
+  <meta name="keywords" content="panti asuhan, anak yatim, donasi, relawan, kegiatan" />
+  <meta name="author" content="Panti Asuhan Nurul Badri" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" />
+
+  <title>Beranda | Panti Asuhan Nurul Badri</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" href="img/favicon.ico" />
+
+  <!-- Bootstrap 4 CSS Lokal -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Lokal -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css" />
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+  <!-- Preload gambar penting -->
+  <link rel="preload" href="img/logo.png" as="image" />
+
+  <!-- Optional: Preconnect for Google Fonts (hapus jika tidak pakai) -->
+  <!--
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  -->
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <header>
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Selamat Datang -->
+        <div class="carousel-item active">
+          <img
+            src="img/slideshow/Tampak Depan.png"
+            class="d-block w-100"
+            alt="Anak-anak Panti Asuhan"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='img/placeholder.png';this.alt='Anak-anak Panti Asuhan'"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Selamat Datang di Panti Asuhan Nurul Badri</h2>
+            <p>Memberikan rumah, pendidikan, dan kasih sayang sejak 2014</p>
+            <div class="carousel-counter">1/3</div>
+            <a href="donasi.html" class="btn btn-danger btn-lg mt-3">Donasi Sekarang</a>
+          </div>
+        </div>
+
+        <!-- Rumah Pintar -->
+        <div class="carousel-item">
+          <img
+            src="./img/kegiatan/foto7.jpg"
+            class="d-block w-100"
+            alt="Kegiatan Belajar"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='img/placeholder.png';this.alt='Kegiatan Belajar'"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Rumah Pintar Kami</h2>
+            <p>Menyediakan akses pendidikan berkualitas bagi anak-anak yang putus sekolah atau kesulitan mengikuti pelajaran di sekolah formal.</p>
+            <div class="carousel-counter">2/3</div>
+            <a href="program.html?id=rumah-pintar" class="btn btn-primary btn-lg mt-3">Lihat Program</a>
+          </div>
+        </div>
+
+        <!-- Daycare -->
+        <!-- <div class="carousel-item">
+          <img
+            src="img/slideshow/slide3.png"
+            class="d-block w-100"
+            alt="Kegiatan Daycare"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='img/placeholder.png';this.alt='Kegiatan Daycare'"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Daycare</h2>
+            <p>Memberikan layanan penitipan anak yang aman dan edukatif sambil membantu orang tua bekerja.</p>
+            <div class="carousel-counter">3/4</div>
+            <a href="program.html?id=daycare" class="btn btn-warning btn-lg mt-3">Lihat Program</a>
+          </div>
+        </div> -->
+
+        <!-- Relawan -->
+        <div class="carousel-item">
+          <img
+            src="img/slideshow/relawan.jpg"
+            class="d-block w-100"
+            alt="Kegiatan Daycare"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='img/placeholder.png';this.alt='Kegiatan Relwan'"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Relawan</h2>
+            <p>Memberikan ruang kontribusi kepada masyarakat umum untuk terlibat langsung dalam kegiatan sosial, edukatif, dan pengembangan anak asuh di panti.</p>
+            <div class="carousel-counter">3/3</div>
+            <a href="program.html?id=relawan" class="btn btn-success btn-lg mt-3">Lihat Program</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Profil Singkat Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="display-4 mb-4">Tentang Panti Kami</h2>
+          <p class="lead" style="text-align: justify;">
+            Panti Asuhan Nurul Badri telah menjadi rumah bagi lebih dari 150 anak yatim dan kurang mampu sejak tahun 2014. Kami berkomitmen untuk memberikan pendidikan, kesehatan, dan lingkungan yang penuh kasih sayang.
+          </p>
+          <p style="text-align: justify;">
+            Saat ini, sistem yang diterapkan oleh Panti Asuhan Nurul Badri adalah sistem anak asuh pulang-pergi. Anak-anak yang terdaftar merupakan masyarakat sekitar panti yang membutuhkan bantuan dari segi ekonomi. Hal ini disebabkan oleh keterbatasan fasilitas dan keuangan yang belum memungkinkan panti untuk menampung anak-anak secara penuh. Jumlah anak yang tinggal di dalam panti masih sangat terbatas karena pembangunan gedung belum sepenuhnya selesai, serta kondisi kamar dan fasilitas pendukung lainnya masih belum memadai. 
+          </p>
+          <p style="text-align: justify;">
+            Anak-anak asuh biasanya hadir untuk mengikuti kegiatan seperti pengajian rutin, bimbingan belajar gratis, acara besar keagamaan, dan program santunan. Selain itu, panti juga memberikan beasiswa, namun saat ini baru dapat diberikan kepada sebagian anak asuh yang memenuhi kategori prioritas, yaitu anak yatim, piatu, dan yatim piatu. Kami berharap ke depannya, seluruh anak asuh yang terdaftar bisa mendapatkan dukungan pendidikan dan fasilitas yang layak seiring dengan berkembangnya sarana dan sumber daya panti.
+          </p>
+          <p style="text-align: justify;">Dengan dukungan dari relawan dan donatur, kami telah membangun 4 program unggulan yang membantu anak-anak meraih mimpi mereka.</p>
+          <a href="tentang-kami.html" class="btn btn-primary btn-lg">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="img/tentang-kami.png"
+            alt="Anak-anak Panti"
+            class="img-fluid rounded shadow"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='img/placeholder.png';this.alt='Anak-anak Panti'"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Unggulan Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Program Unggulan Kami</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-hands-helping fa-3x text-primary"></i>
+              </div>
+              <h3 class="h4 mb-3">Program Relawan</h3>
+              <p class="mb-4">Bergabunglah sebagai relawan untuk mengajar, bermain, atau berbagi keterampilan dengan anak-anak kami.</p>
+              <a href="relawan.html" class="btn btn-outline-primary">Gabung Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-book-open fa-3x text-success"></i>
+              </div>
+              <h3 class="h4 mb-3">Rumah Pintar</h3>
+              <p class="mb-4">Fasilitas belajar lengkap dengan perpustakaan dan komputer untuk mendukung pendidikan anak-anak.</p>
+              <a href="program.html?id=rumah-pintar" class="btn btn-outline-success">Lihat Fasilitas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-baby-carriage fa-3x text-warning"></i>
+              </div>
+              <h3 class="h4 mb-3">Daycare</h3>
+              <p class="mb-4">Layanan penitipan anak berkualitas untuk masyarakat sekitar dengan harga terjangkau.</p>
+              <a href="program.html?id=daycare" class="btn btn-outline-warning">Info Lengkap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card program-card h-100 border-0 shadow">
+            <div class="card-body text-center p-4">
+              <div class="icon-box mb-4">
+                <i class="fas fa-bullseye fa-3x text-danger"></i>
+              </div>
+              <h3 class="h4 mb-3">NGEJIM YUK!</h3>
+              <p class="mb-4">Meningkatkan pemahaman ideologis dan keagamaan warga Muhammadiyah melalui kajian berbasis putusan Tarjih.</p>
+              <a href="program.html?id=ngejim" class="btn btn-outline-danger">Info Lengkap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kegiatan Terbaru Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Kegiatan Terbaru</h2>
+      <div class="row justify-content-center" id="kegiatanContainer">
+        <div class="col-12 text-center py-4">
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="berita-kegiatan.html" class="btn btn-primary">Lihat Semua Kegiatan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-gray-800 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i>&nbsp; &nbsp; &nbsp; </i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top" aria-label="Scroll ke atas">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap dan dependencies -->
+  <script src="assets/vendor/jquery/jquery.min.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- FontAwesome -->
+  <script src="assets/vendor/fontawesome-free/js/all.min.js" defer></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/dashboard.js" defer></script>
+</body>
+</html>

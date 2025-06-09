@@ -1,0 +1,83 @@
+[
+{
+    "id": 1,
+    "title": "Pembagian Paket Ramadan",
+    "date": "2025-04-21",
+    "category": "activity",
+    "image": "./img/kegiatan/foto22.jpg",
+    "excerpt": "Menindaklanjuti program pembagian makanan untuk anak-anak panti asuhan selama bulan Ramadan. Kegiatan ini dihadiri oleh 50 anak dan 20 relawan.",
+    "url": "detail-berita-1.html?id=1",
+    "tags": ["Ramadan", "Bantuan", "Kegiatan"],
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "title": "PKM UNPAM Edukasi Instalasi Windows untuk Literasi Digital",
+    "date": "2024-05-12",
+    "category": "education",
+    "image": "./img/kegiatan/foto43.JPG",
+    "excerpt": "Pelatihan instalasi sistem operasi Windows oleh tim PKM UNPAM untuk meningkatkan literasi digital anak-anak panti asuhan. Kegiatan diisi dengan praktik langsung dan pemberian bantuan sembako.",
+    "url": "detail-berita-2.html?id=2",
+    "tags": ["Pendidikan", "Teknologi", "Literasi Digital", "PKM"]
+  },
+  {
+    "id": 3,
+    "title": "Workshop & Penyaluran Sembako oleh Zahin Community",
+    "date": "2024-06-15",
+    "category": "education",
+    "image": "./img/kegiatan/zahin-community.jpg",
+    "excerpt": "Kegiatan workshop kreativitas dan penyaluran bantuan sembako untuk anak-anak Panti Asuhan Kasih Bunda oleh Zahin Community.",
+    "url": "detail-berita-3.html?id=3",
+    "tags": ["Workshop", "Sembako", "Zahin Community"]
+  },
+  {
+    "id": 4,
+    "title": "Program Bimbingan Belajar",
+    "date": "2025-03-28",
+    "category": "education",
+    "image": "./img/kegiatan/foto10.jpg",
+    "excerpt": "Program bimbingan belajar rutin untuk anak-anak panti asuhan yang membutuhkan bantuan tambahan dalam pelajaran sekolah. Dibimbing oleh relawan pengajar profesional.",
+    "url": "detail-berita-4.html?id=4",
+    "tags": ["Edukasi", "Belajar"]
+  },
+  {
+    "id": 5,
+    "title": "Perayaan Kemerdekaan RI ke-79",
+    "date": "2024-08-17",
+    "category": "activity",
+    "image": "./img/kegiatan/hutri1.jpg",
+    "excerpt": "Perayaan HUT RI ke-79 dengan berbagai lomba tradisional dan kegiatan seru untuk anak-anak panti asuhan, diikuti oleh 45 anak asuh dan 25 relawan.",
+    "url": "detail-berita-5.html?id=5",
+    "tags": ["17an", "Kemerdekaan", "Relawan"]
+  },
+  {
+    "id": 6,
+    "title": "Field Trip Seru ke GO!WET Waterpark",
+    "date": "2024-07-20",
+    "category": "activity",
+    "image": "./img/kegiatan/gowet2.jpg",
+    "excerpt": "Kegiatan rekreasi edukatif ke waterpark GO!WET untuk 30 anak panti asuhan didampingi 15 relawan, menikmati berbagai wahana air dan belajar keselamatan berenang.",
+    "url": "detail-berita-6.html?id=6",
+    "tags": ["Rekreasi", "Berenang", "Edukasi"]
+  },
+  {
+    "id": 7,
+    "title": "Belajar Angklung di Panti",
+    "date": "2024-10-25",
+    "category": "education",
+    "image": "./img/kegiatan/foto23.jpg",
+    "excerpt": "Program internal divisi pendidikan panti mengenalkan angklung kepada anak asuh, dengan instruktur Pak Subarkah dari tim pengurus panti.",
+    "url": "detail-berita-7.html?id=7",
+    "tags": ["Angklung", "Pendidikan", "Budaya"]
+  },
+  {
+    "id": 8,
+    "title": "Sholat Idul Fitri di Lapangan Parkir Super Indo",
+    "date": "2025-04-10",
+    "category": "activity",
+    "image": "./img/kegiatan/foto27.jpg",
+    "excerpt": "Kegiatan rutin sholat Idul Fitri bersama PCM Bekasi Barat dengan Ust. Tri Nurhakim sebagai imam dan khatib",
+    "url": "detail-berita-8.html?id=8",
+    "tags": ["IdulFitri", "KegiatanRutin", "PCMBekasiBarat"]
+  }
+]

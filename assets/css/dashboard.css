@@ -1,0 +1,248 @@
+/* ========== HERO CAROUSEL ========== */
+.hero-carousel {
+  margin-top: -56px;
+  position: relative;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: calc(100vh - 56px);
+  min-height: 500px;
+}
+
+.hero-carousel .carousel-inner {
+  pointer-events: auto;
+}
+
+.hero-carousel .carousel-item {
+  background: no-repeat center center;
+  background-size: cover;
+  position: relative;
+  background-color: #f8f9fa; /* Fallback jika gambar tidak ada */
+}
+
+.hero-carousel .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(40, 167, 69, 0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #e9ecef; /* Fallback color */
+}
+
+.hero-carousel .carousel-caption {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  z-index: 2;
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(0,0,0,0.3); /* Meningkatkan keterbacaan */
+  border-radius: 5px;
+}
+
+.hero-carousel .carousel-caption h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-carousel .carousel-caption p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #f8f9fa;
+}
+
+.carousel-counter {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  z-index: 3;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 4;
+  width: 5%;
+}
+
+/* ========== PROGRAM CARDS ========== */
+.program-card {
+  border-top: 4px solid var(--primary);
+  transition: all 0.3s ease;
+  height: 100%;
+  min-height: 300px;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.program-card .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .icon-box {
+  background: rgba(40, 167, 69, 0.2);
+  transform: scale(1.1);
+}
+
+/* ========== KEGIATAN SECTION ========== */
+.kegiatan-card {
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.kegiatan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.kegiatan-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa; /* Fallback color */
+}
+
+.kegiatan-card:hover .card-img-top {
+  opacity: 0.9;
+}
+
+/* Error image fallback */
+img[onerror] {
+  object-fit: cover;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fallback untuk gambar yang tidak ada */
+.img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  color: #6c757d;
+  height: 100%;
+  min-height: 150px;
+}
+
+/* Style untuk teks brand */
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+  
+  .navbar-brand img {
+    height: 50px !important;
+  }
+}
+
+/* Memastikan logo dan teks sejajar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 992px) {
+  .hero-carousel .carousel-caption h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-carousel .carousel-caption p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel .carousel-caption {
+    bottom: 20%;
+    width: 90%;
+  }
+  
+  .hero-carousel .carousel-caption h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-carousel .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-carousel .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-carousel .carousel-caption .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .carousel-counter {
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+}

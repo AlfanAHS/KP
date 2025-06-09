@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita & Kegiatan | Panti Asuhan Nurul Badri</title>
+  <meta name="description" content="Berita terbaru dan kegiatan di Panti Asuhan Nurul Badri">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="assets/css/sb-admin-2.min.css" as="style">
+  <link rel="preload" href="assets/vendor/fontawesome-free/css/all.min.css" as="style">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- CSS Khusus Berita -->
+  <link rel="stylesheet" href="assets/css/berita-kegiatan.css">
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item active"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-berita-kegiatan d-flex align-items-center text-white" role="banner">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold mb-3">Berita & Kegiatan Terkini</h1>
+      <p class="lead mb-4">Ikuti perkembangan terbaru seputar aktivitas, program, dan pencapaian Panti Asuhan Nurul Badri</p>
+      <a href="#berita-terbaru" class="btn btn-outline-light btn-lg" aria-label="Lihat berita terbaru">Lihat Berita Terbaru</a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-light">
+    <div class="container">
+      <ol class="breadcrumb bg-transparent mb-0 py-3">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Berita & Kegiatan  </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Main Content -->
+      <main class="col-lg-8">
+        <!-- Loading Indicator -->
+        <div id="loading-indicator" class="text-center py-5">
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Memuat...</span>
+          </div>
+          <p class="mt-3">Memuat berita...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" class="alert alert-danger d-none">
+          <i class="fas fa-exclamation-triangle mr-2"></i>
+          <span id="error-text">Gagal memuat data berita. Silakan coba lagi nanti.</span>
+          <button id="retry-button" class="btn btn-sm btn-danger ml-3">Coba Lagi</button>
+        </div>
+
+        <!-- News Cards Container -->
+        <div class="news-list row"></div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="text-center py-5 d-none">
+          <i class="fas fa-newspaper fa-4x text-muted mb-3"></i>
+          <h4>Tidak ada berita tersedia</h4>
+          <p class="text-muted">Silakan cek kembali nanti atau gunakan filter berbeda</p>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center" id="pagination"></ul>
+            </nav>
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="col-lg-4">
+        <!-- Search & Filter -->
+        <div class="card sidebar-card mb-4">
+          <div class="card-header bg-white border-bottom">
+            <h5 class="mb-0">Pencarian & Filter</h5>
+          </div>
+          <div class="card-body">
+            <!-- Search Box -->
+            <div class="mb-3">
+              <div class="input-group">
+                <input type="text" id="news-search" class="form-control" placeholder="Cari berita...">
+                <button class="btn btn-success" type="button" id="search-button" aria-label="Cari berita">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Sort Options -->
+            <div class="mb-3">
+              <label for="sort-options" class="form-label">Urutkan</label>
+              <select class="form-select" id="sort-options">
+                <option value="newest">Terbaru</option>
+                <option value="oldest">Terlama</option>
+              </select>
+            </div>
+            
+            <!-- Categories -->
+            <div class="mb-3">
+              <label class="form-label">Kategori</label>
+              <div class="category-list">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="category" id="cat-all" value="all" checked>
+                  <label class="form-check-label" for="cat-all">Semua</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="category" id="cat-activity" value="activity">
+                  <label class="form-check-label" for="cat-activity">Kegiatan Anak</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="category" id="cat-donation" value="donation">
+                  <label class="form-check-label" for="cat-donation">Donasi</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="category" id="cat-visit" value="visit">
+                  <label class="form-check-label" for="cat-visit">Kunjungan</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="category" id="cat-edu" value="education">
+                  <label class="form-check-label" for="cat-edu">Edukasi</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archive -->
+        <div class="card sidebar-card mb-4">
+          <div class="card-header bg-white border-bottom">
+            <h5 class="mb-0">Arsip Bulanan</h5>
+          </div>
+          <div class="card-body">
+
+            <!-- 2025 -->
+            <div class="archive-year" onclick="toggleArchive('2025')">
+              <i class="fas fa-folder me-2"></i>2025
+            </div>
+            <div class="archive-month" id="archive-2025">
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2025" data-month="04">April 2025</a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2025" data-month="03">Maret 2025</a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2025" data-month="02">Februari 2025</a>
+              </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="archive-year" onclick="toggleArchive('2024')">
+              <i class="fas fa-folder me-2"></i>2024
+            </div>
+            <div class="archive-month" id="archive-2024">
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2024" data-month="12">Desember 2024</a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2024" data-month="11">November 2024</a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="text-decoration-none archive-link" data-year="2024" data-month="10">Oktober 2024</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </aside>
+        </div>
+        </div>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-gray-800 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i>&nbsp; &nbsp; &nbsp; </i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top" aria-label="Scroll to top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- SB Admin 2 JavaScript -->
+  <script src="assets/js/sb-admin-2.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="assets/js/berita-kegiatan.js"></script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar anak asuh Panti Asuhan Nurul Badri yang membutuhkan bantuan sponsor untuk pendidikan, kesehatan, dan kebutuhan dasar">
+  <meta name="keywords" content="anak asuh, panti asuhan, yatim piatu, sponsor anak, donasi anak">
+  <meta name="author" content="Panti Asuhan Nurul Badri">
+  <meta property="og:title" content="Anak Asuh | Panti Asuhan Nurul Badri">
+  <meta property="og:description" content="Daftar anak asuh yang membutuhkan bantuan sponsor">
+  <meta property="og:image" content="https://example.com/img/anak-asuh/social-preview.jpg">
+  <meta property="og:url" content="https://example.com/anak-asuh.html">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>Anak Asuh | Panti Asuhan Nurul Badri</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+  
+  <!-- SB Admin 2 CSS -->
+  <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
+  
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="assets/vendor/datatables/dataTables.bootstrap4.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/anak-asuh.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- SheetJS for Excel export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body id="page-top">
+
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/logo.png"
+          alt="Logo Panti Asuhan Nurul Badri"
+          class="navbar-logo"
+          height="60"
+          loading="lazy"
+          onerror="this.onerror=null; this.src='img/placeholder.png'; this.alt='Logo Panti Asuhan'"
+        />
+      </a>
+      <span class="brand-text">Panti Asuhan Nurul Badri</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita-kegiatan.html">Berita</a></li>
+          <li class="nav-item active"><a class="nav-link" href="anak-asuh.html">Anak Asuh</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="relawan.html">Relawan</a></li>
+          <li class="nav-item"><a class="nav-link" href="donasi.html">Donasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-anak-asuh d-flex align-items-center text-white" role="banner">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold mb-3">Anak Asuh Kami</h1>
+      <p class="lead mb-4">Mereka adalah generasi penerus yang membutuhkan kasih sayang dan dukungan Anda</p>
+      <a href="#daftar-asuh" class="btn btn-outline-light btn-lg" aria-label="Lihat daftar anak asuh">Lihat Daftar Anak</a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" class="bg-light">
+    <div class="container">
+      <ol class="breadcrumb bg-transparent mb-0 py-3">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Anak Asuh</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Statistik Section -->
+    <section class="py-5 bg-light" aria-labelledby="statistics-heading">
+      <div class="container">
+        <h2 id="statistics-heading" class="visually-hidden">Statistik Anak Asuh</h2>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-custom-5 col-6 mb-4 mb-md-0">
+            <div class="stat-box">
+              <i class="fas fa-child fa-3x mb-3 text-primary" aria-hidden="true"></i>
+              <h3 id="counter-total" class="counter" data-target="0">0</h3>
+              <p>Total Anak Asuh</p>
+            </div>
+          </div>
+          <div class="col-md-custom-5 col-6 mb-4 mb-md-0">
+            <div class="stat-box">
+              <i class="fas fa-heart fa-3x mb-3 text-danger" aria-hidden="true"></i>
+              <h3 id="counter-yatim" class="counter" data-target="0">0</h3>
+              <p>Yatim</p>
+            </div>
+          </div>
+          <div class="col-md-custom-5 col-6 mb-4 mb-md-0 mt-3">
+            <div class="stat-box">
+              <i class="fas fa-user-friends fa-3x mb-3 text-warning" aria-hidden="true"></i>
+              <h3 id="counter-piatu" class="counter" data-target="0">0</h3>
+              <p>Piatu</p>
+            </div>
+          </div>
+          <div class="col-md-custom-5 col-6 mb-4 mb-md-0 mt-3">
+            <div class="stat-box">
+              <i class="fas fa-hands-helping fa-3x mb-3 text-info" aria-hidden="true"></i>
+              <h3 id="counter-yatim-piatu" class="counter" data-target="0">0</h3>
+              <p>Yatim Piatu</p>
+            </div>
+          </div>
+          <div class="col-md-custom-5 col-6 mt-3">
+            <div class="stat-box">
+              <i class="fas fa-home fa-3x mb-3 text-success" aria-hidden="true"></i>
+              <h3 id="counter-dhuafa" class="counter" data-target="0">0</h3>
+              <p>Dhuafa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter and Table Section -->
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Filter Section -->
+          <div class="card mb-4 border-success">
+            <div class="card-header bg-white py-3">
+              <h2 class="h5 mb-0"><i class="fas fa-filter text-success mr-2" aria-hidden="true"></i> Filter Data</h2>
+            </div>
+            <div class="card-body">
+              <form id="filterForm">
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="filterKategori">Kategori</label>
+                    <select class="form-control" id="filterKategori" role="button" style="cursor: pointer;"aria-label="Filter berdasarkan kategori">
+                      <option value="">Semua Kategori</option>
+                      <option value="Yatim">Yatim</option>
+                      <option value="Piatu">Piatu</option>
+                      <option value="Yatim Piatu">Yatim Piatu</option>
+                      <option value="Dhuafa">Dhuafa</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="filterUsia">Rentang Usia</label>
+                    <select class="form-control" id="filterUsia" role="button" style="cursor: pointer;" aria-label="Filter berdasarkan usia">
+                      <option value="">Semua Usia</option>
+                      <option value="0-5">0-5 Tahun</option>
+                      <option value="6-12">6-12 Tahun</option>
+                      <option value="13-17">13-17 Tahun</option>
+                      <option value="18+">18+ Tahun</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="filterSponsor">Status Sponsor</label>
+                    <select class="form-control" id="filterSponsor" role="button" style="cursor: pointer;" aria-label="Filter berdasarkan status sponsor">
+                      <option value="">Semua Status</option>
+                      <option value="tersponsor">Tersponsor</option>
+                      <option value="belum">Belum Tersponsor</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <button type="button" class="btn btn-success btn-block" id="resetFilter">
+                      <i class="fas fa-sync-alt mr-2" aria-hidden="true"></i> Reset Filter
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Export & Action Buttons -->
+          <div class="card mb-4 border-success">
+            <div class="card-body py-3">
+              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="mb-2 mb-md-0" id="daftar-asuh">
+                  <h2 class="h5 mb-0"><i class="fas fa-child text-success mr-2" aria-hidden="true"></i> Daftar Anak Asuh</h2>
+                </div>
+                <div class="btn-group" style="z-index: 2 !important;" role="group" aria-label="Export, Import and sponsor actions">
+                  <!-- <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-download mr-2" aria-hidden="true"></i> Export
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" id="exportExcel"><i class="fas fa-file-excel text-success mr-2" aria-hidden="true"></i> Excel</a>
+                    <a class="dropdown-item" href="#" id="exportPDF"><i class="fas fa-file-pdf text-danger mr-2" aria-hidden="true"></i> PDF</a>
+                    <a class="dropdown-item" href="#" id="exportPrint"><i class="fas fa-print text-primary mr-2" aria-hidden="true"></i> Print</a>
+                  </div>
+                  <button class="btn btn-outline-primary ml-2" id="importData">
+                    <i class="fas fa-upload mr-2" aria-hidden="true"></i> Import
+                  </button> -->
+                  <button class="btn btn-success ml-2" id="btnSponsor" disabled>
+                    <i class="fas fa-hand-holding-heart mr-2" aria-hidden="true"></i> Sponsor Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Table -->
+          <div class="card shadow mb-4 border-success">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover" id="dataTable" width="100%" cellspacing="0" aria-describedby="table-description">
+                  <caption id="table-description" class="visually-hidden">Daftar anak asuh Panti Asuhan Nurul Badri</caption>
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col" width="5%">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="selectAll" aria-label="Pilih semua anak">
+                          <label class="custom-control-label" for="selectAll"></label>
+                        </div>
+                      </th>
+                      <th scope="col">Foto</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Usia</th>
+                      <th scope="col">Kategori</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody">
+                    <!-- Data akan diisi via JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Detail Modal (versi baru) -->
+  <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h3 class="modal-title" id="detailModalLabel">Detail Anak</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalDetailContent">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img id="detailFoto" src="" alt="Foto Anak" class="img-fluid rounded mb-3" style="max-height: 300px;">
+              <h4 id="detailNama" class="mb-2"></h4>
+              <p id="detailUmur" class="text-muted"></p>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <p id="detailGender" class="form-control-static"></p>
+                  </div>
+                  <div class="form-group">
+                    <label>Tanggal Lahir</label>
+                    <p id="detailBirthdate" class="form-control-static"></p>
+                  </div>
+                  <div class="form-group">
+                    <label>Pendidikan</label>
+                    <p id="detailEducation" class="form-control-static"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Kategori</label>
+                    <p id="detailCategory" class="form-control-static"></p>
+                  </div>
+                  <div class="form-group">
+                    <label>Tanggal Masuk</label>
+                    <p id="detailJoinDate" class="form-control-static"></p>
+                  </div>
+                  <div class="form-group">
+                    <label>Status Sponsor</label>
+                    <p id="detailSponsorStatus" class="form-control-static"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Deskripsi</label>
+                <p id="detailDescription" class="form-control-static"></p>
+              </div>
+              <div class="form-group">
+                <label>Kebutuhan Khusus</label>
+                <p id="detailNeeds" class="form-control-static"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-success btn-sponsor" data-id="">
+            <i class="fas fa-hand-holding-heart mr-2" aria-hidden="true"></i> Sponsor Anak Ini
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sponsor Modal (versi terbaik untuk UI/UX) -->
+  <!-- Sponsor Modal (versi dengan tab) -->
+  <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="sponsorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h3 class="modal-title" id="sponsorModalLabel">Form Sponsorship</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Tab Navigation -->
+          <ul class="nav nav-tabs mb-4" id="sponsorTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="single-tab" data-toggle="tab" data-target="#singleSponsor" role="button" style="cursor: pointer;" aria-controls="single" aria-selected="true">
+                <i class="fas fa-user mr-2"></i>Sponsor Tunggal
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="multiple-tab" data-toggle="tab" data-target="#multipleSponsor" role="button" style="cursor: pointer;" aria-controls="multiple" aria-selected="false">
+                <i class="fas fa-users mr-2"></i>Sponsor Multiple
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Tab Content -->
+          <div class="tab-content" id="sponsorTabContent">
+            <!-- Single Sponsor Form -->
+            <div class="tab-pane fade show active" id="singleSponsor" role="tabpanel" aria-labelledby="single-tab">
+              <form id="singleSponsorForm">
+                <input type="hidden" name="_subject" value="Permohonan Sponsorship Tunggal">
+                <input type="hidden" name="_replyto" id="singleFormEmail">
+                <input type="hidden" name="anak" id="singleFormAnak">
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="singleNamaAnak">Nama Anak</label>
+                      <input type="text" class="form-control" id="singleNamaAnak" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="singleNamaSponsor">Nama Lengkap Sponsor <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="singleNamaSponsor" name="nama" required>
+                      <div class="invalid-feedback">Harap isi nama lengkap</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="singleEmailSponsor">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="singleEmailSponsor" name="email" required>
+                      <div class="invalid-feedback">Harap isi email yang valid</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="singleNoHp">Nomor Telepon/WhatsApp <span class="text-danger">*</span></label>
+                      <input type="tel" class="form-control" id="singleNoHp" name="telepon" required>
+                      <div class="invalid-feedback">Harap isi nomor telepon</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="singleJenisSponsor">Jenis Sponsorship <span class="text-danger">*</span></label>
+                      <select class="form-control" id="singleJenisSponsor" name="jenis" required>
+                        <option value="" disabled selected>Pilih Jenis</option>
+                        <option value="Pendidikan">Pendidikan</option>
+                        <option value="Kesehatan">Kesehatan</option>
+                        <option value="Nutrisi">Nutrisi</option>
+                        <option value="Lengkap">Lengkap (Semua Kebutuhan)</option>
+                      </select>
+                      <div class="invalid-feedback">Harap pilih jenis sponsorship</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="singleDurasi">Durasi Sponsorship <span class="text-danger">*</span></label>
+                      <select class="form-control" id="singleDurasi" name="durasi" required>
+                        <option value="3 Bulan">3 Bulan</option>
+                        <option value="6 Bulan">6 Bulan</option>
+                        <option value="1 Tahun" selected>1 Tahun</option>
+                        <option value="2 Tahun">2 Tahun</option>
+                        <option value="3 Tahun">3 Tahun</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="singlePesan">Pesan (Opsional)</label>
+                  <textarea class="form-control" id="singlePesan" name="pesan" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+            
+            <!-- Multiple Sponsor Form -->
+            <div class="tab-pane fade" id="multipleSponsor" role="tabpanel" aria-labelledby="multiple-tab">
+              <form id="multiSponsorForm">
+                <div class="alert alert-info">
+                  <i class="fas fa-info-circle mr-2"></i> Anda akan mensponsori <span id="jumlahAnakDipilih">0</span> anak.
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="multiNamaSponsor">Nama Lengkap Sponsor <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="multiNamaSponsor" name="nama" required>
+                      <div class="invalid-feedback">Harap isi nama lengkap</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="multiEmailSponsor">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="multiEmailSponsor" name="email" required>
+                      <div class="invalid-feedback">Harap isi email yang valid</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="multiNoHp">Nomor Telepon/WhatsApp <span class="text-danger">*</span></label>
+                      <input type="tel" class="form-control" id="multiNoHp" name="telepon" required>
+                      <div class="invalid-feedback">Harap isi nomor telepon</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="multiJenisSponsor">Jenis Sponsorship <span class="text-danger">*</span></label>
+                      <select class="form-control" id="multiJenisSponsor" name="jenis" required>
+                        <option value="" disabled selected>Pilih Jenis</option>
+                        <option value="Pendidikan">Pendidikan</option>
+                        <option value="Kesehatan">Kesehatan</option>
+                        <option value="Nutrisi">Nutrisi</option>
+                        <option value="Lengkap">Lengkap (Semua Kebutuhan)</option>
+                      </select>
+                      <div class="invalid-feedback">Harap pilih jenis sponsorship</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="multiDurasi">Durasi Sponsorship <span class="text-danger">*</span></label>
+                  <select class="form-control" id="multiDurasi" name="durasi" required>
+                    <option value="3 Bulan">3 Bulan</option>
+                    <option value="6 Bulan">6 Bulan</option>
+                    <option value="1 Tahun" selected>1 Tahun</option>
+                    <option value="2 Tahun">2 Tahun</option>
+                    <option value="3 Tahun">3 Tahun</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="multiPesan">Pesan (Opsional)</label>
+                  <textarea class="form-control" id="multiPesan" name="pesan" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="alert alert-info mt-3">
+            <i class="fas fa-info-circle mr-2" aria-hidden="true"></i> Setelah mengisi form ini, tim kami akan menghubungi Anda untuk proses selanjutnya.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn btn-success" id="submitSponsor">
+            <i class="fas fa-paper-plane mr-2" aria-hidden="true"></i> Kirim Permohonan
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Hidden untuk Submit Multiple Sponsor -->
+  <form id="multiSponsorFormspree" action="https://formspree.io/f/xnndokoq" method="POST" style="display:none;">
+    <input type="hidden" name="_subject" value="Permohonan Sponsorship Multiple">
+    <input type="hidden" name="_replyto" id="multiFormEmail">
+    <input type="hidden" name="nama" id="multiFormNama">
+    <input type="hidden" name="email" id="multiFormEmailSponsor">
+    <input type="hidden" name="telepon" id="multiFormTelepon">
+    <input type="hidden" name="jenis" id="multiFormJenis">
+    <input type="hidden" name="durasi" id="multiFormDurasi">
+    <input type="hidden" name="jumlah_anak" id="multiFormJumlahAnak">
+    <input type="hidden" name="daftar_anak" id="multiFormDaftarAnak">
+    <input type="hidden" name="catatan" id="multiFormCatatan">
+    <input type="text" name="_gotcha" style="display:none">
+  </form>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-success text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-4">Panti Asuhan Nurul Badri</h5>
+          <p>Memberikan rumah, pendidikan, dan kasih sayang untuk anak yatim dan kurang mampu sejak 2014.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-4">Menu</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="tentang-kami.html" class="text-white">Tentang Kami</a></li>
+            <li class="mb-2"><a href="program.html" class="text-white">Program</a></li>
+            <li class="mb-2"><a href="berita-kegiatan.html" class="text-white">Berita & Kegiatan</a></li>
+            <li class="mb-2"><a href="anak-asuh.html" class="text-white">Anak Asuh</a></li>
+            <li class="mb-2"><a href="galeri.html" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="relawan.html" class="text-white">Relawan</a></li>
+            <li class="mb-2"><a href="donasi.html" class="text-white">Donasi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Bintara 6 No.7, RT.002 / RW.006, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134</li>
+            <li class="mb-2"><i class="fas fa-phone mr-2"></i> +62 896-0784-6603 (Ibu Aida)</li>
+            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> info.nurulbadri@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5 class="mb-4">Donasi via Bank</h5>
+          <div class="bank-transfer">
+            <p class="mb-2"><strong>BSI</strong>: 7137471994</p>
+            <p>a.n. Yayasan Nurul Badri</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-4" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="small mb-0">© 2024 Panti Asuhan Nurul Badri. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p class="small mb-0">Dibuat dengan ❤ untuk anak Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top" aria-label="Scroll to top">
+    <i class="fas fa-angle-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- DataTables JavaScript -->
+  <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  
+  <!-- SB Admin 2 JavaScript -->
+  <script src="assets/js/sb-admin-2.min.js"></script>
+
+  <!-- SheetJS for Excel export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- Tambahkan sebelum script.js -->
+  <!-- jsPDF dan AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/anak-asuh.js"></script>
+</body>
+</html>

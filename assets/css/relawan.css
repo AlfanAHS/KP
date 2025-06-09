@@ -1,0 +1,564 @@
+:root {
+  --primary:#28a745;
+  --secondary:#20c997;
+  --dark:#1e5631;
+  --light:#f8f9fa;
+  --warning:#ffc107;
+  --hero-gradient-start:rgba(40,167,69,0.7);
+  --hero-gradient-end:rgba(30,86,49,0.9);
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.12);
+  --shadow-md:0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg:0 10px 15px rgba(0,0,0,0.1);
+  --transition:all 0.3s ease;
+  }
+
+/* Hero Section */
+.hero-relawan {
+  background:linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('/img/tentang-kami.png') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin-top:30px;
+  color:white;
+  padding:2rem;
+  position:relative;
+  }
+.hero-relawan h1 {
+  font-size:clamp(2.5rem,5vw,3.5rem);
+  text-shadow:var(--shadow-sm);
+  line-height:1.2;
+  margin-bottom:1rem;
+  animation:fadeInDown 1s ease;
+  }
+.hero-relawan .lead {
+  font-size:clamp(1.2rem,2vw,1.5rem);
+  text-shadow:var(--shadow-sm);
+  max-width:800px;
+  margin:0 auto 2rem;
+  animation:fadeIn 1.5s ease;
+  }
+
+.hero-relawan::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #28a745;
+  z-index: -1;
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #28a745;
+}
+
+/* Icon Box */
+.icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(40, 167, 69, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover .icon-box {
+  transform: scale(1.1);
+  background-color: rgba(40, 167, 69, 0.2);
+}
+
+/* Program Cards */
+.program-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.program-details {
+  font-size: 0.9rem;
+  color: #6c757d;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* Check List */
+.list-check {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-check li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.list-check li:before {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #28a745;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.testimonial-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #28a745;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 1.1rem;
+}
+
+/* Form Styles */
+#volunteerForm .form-control {
+  border-radius: 4px;
+  border-color: #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#volunteerForm .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Document link section */
+.alert-info {
+  background-color: #e7f8ff;
+  border-color: #b3e0ff;
+  color: #004085;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* URL input fields */
+input[type="url"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="url"]:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* FAQ Accordion */
+.btn-link {
+  color: #212529;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.btn-link:hover, .btn-link.active {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.btn-link i {
+  transition: transform 0.3s ease;
+}
+
+.btn-link[aria-expanded="true"] i {
+  transform: rotate(90deg);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* Error image fallback */
+img[onerror] {
+  object-fit: cover;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fallback untuk gambar yang tidak ada */
+.img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  color: #6c757d;
+  height: 100%;
+  min-height: 150px;
+}
+
+/* Button hover effects */
+.btn-success {
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+/* Style untuk teks brand */
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+  
+  .navbar-brand img {
+    height: 50px !important;
+  }
+}
+
+/* Memastikan logo dan teks sejajar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* ========== KEYFRAMES ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== H3 HEADING RESPONSIVE ========== */
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+/* ========== SELECT OPTION RESPONSIVE ========== */
+select,
+option {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  select,
+  option {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  select,
+  option {
+    font-size: 0.9rem;
+    padding: 0.45rem;
+  }
+}
+
+@media (max-width: 576px) {
+  select,
+  option {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+  
+  /* For better mobile touch targets */
+  select {
+    min-height: 2.5rem;
+  }
+  
+  option {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* ========== HERO RELAWAN RESPONSIVE ========== */
+@media (max-width: 1200px) {
+  .hero-relawan {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-relawan {
+    background-attachment: scroll;
+    padding: 3rem 1rem;
+  }
+  
+  .hero-relawan h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-relawan .lead {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-relawan {
+    min-height: 40vh;
+  }
+  
+  .hero-relawan h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero-relawan .lead {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-relawan {
+    min-height: 35vh;
+    margin-top: 20px;
+    padding: 2rem 1rem;
+  }
+  
+  .hero-relawan h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-relawan .lead {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ========== SECTION TITLE RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .section-title:after {
+    width: 60px;
+    height: 2px;
+  }
+}
+
+/* ========== PROGRAM CARDS RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .program-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .icon-box {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .program-card:hover {
+    transform: none;
+  }
+  
+  .program-details {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========== TESTIMONIAL CARD RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .testimonial-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating {
+    font-size: 1rem;
+  }
+}
+
+/* ========== FORM RESPONSIVE ========== */
+@media (max-width: 768px) {
+  #volunteerForm .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  #volunteerForm .form-control {
+    padding: 0.75rem;
+  }
+}
+
+/* ========== FAQ ACCORDION RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .btn-link {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .card-header {
+    padding: 0;
+  }
+}
+
+/* ========== ANIMATION CLASSES ========== */
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.fade-in-down {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+/* ========== BUTTON RESPONSIVE ========== */
+@media (max-width: 576px) {
+  .btn-success {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-success:hover {
+    transform: none;
+  }
+}

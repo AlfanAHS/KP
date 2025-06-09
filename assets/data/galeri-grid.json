@@ -1,0 +1,399 @@
+
+[
+   {
+    "id": 1,
+    "type": "photo",
+    "image": "img/kegiatan/foto1.jpg"
+  },
+  {
+    "id": 2,
+    "type": "photo",
+    "image": "img/kegiatan/foto2.jpg"
+  },
+  {
+    "id": 3,
+    "type": "video",
+    "video": "img/kegiatan/video1.mp4",
+    "thumbnail": "img/kegiatan/santunan-thumb.jpg"
+  },
+  {
+    "id": 4,
+    "type": "photo",
+    "image": "img/kegiatan/foto3.jpg"
+  },
+  {
+    "id": 5,
+    "type": "video",
+    "video": "img/kegiatan/video2.mp4",
+    "thumbnail": "img/kegiatan/lomba-thumb.jpg"
+  },
+  {
+    "id": 6,
+    "type": "photo",
+    "image": "img/kegiatan/foto4.jpg"
+  },
+  {
+    "id": 7,
+    "type": "video",
+    "video": "img/kegiatan/video6.mp4",
+    "thumbnail": "img/kegiatan/natal-thumb.jpg"
+  },
+  {
+    "id": 8,
+    "type": "photo",
+    "image": "img/kegiatan/foto5.jpg"
+  },
+  {
+    "id": 9,
+    "type": "photo",
+    "image": "img/kegiatan/foto6.jpg"
+  },
+  {
+    "id": 10,
+    "type": "video",
+    "video": "img/kegiatan/video3.mp4",
+    "thumbnail": "img/kegiatan/hari-anak-thumb.jpg"
+  },
+  {
+    "id": 11,
+    "type": "photo",
+    "image": "img/kegiatan/foto7.jpg"
+  },
+  {
+    "id": 12,
+    "type": "video",
+    "video": "img/kegiatan/video4.mp4",
+    "thumbnail": "img/kegiatan/natal-thumb.jpg"
+  },
+  {
+    "id": 13,
+    "type": "photo",
+    "image": "img/kegiatan/foto8.jpg"
+  },
+  {
+    "id": 14,
+    "type": "video",
+    "video": "img/kegiatan/video5.mp4",
+    "thumbnail": "img/kegiatan/lebaran-thumb.jpg"
+  },
+  {
+    "id": 15,
+    "type": "photo",
+    "image": "img/kegiatan/foto9.jpg"
+  },
+  {
+    "id": 16,
+    "type": "photo",
+    "image": "img/kegiatan/foto10.jpg"
+  },
+  {
+    "id": 17,
+    "type": "photo",
+    "image": "img/kegiatan/foto11.jpg"
+  },
+  {
+    "id": 18,
+    "type": "photo",
+    "image": "img/kegiatan/foto12.jpg"
+  },
+  {
+    "id": 19,
+    "type": "photo",
+    "image": "img/kegiatan/foto13.jpg"
+  },
+  {
+    "id": 20,
+    "type": "photo",
+    "image": "img/kegiatan/foto14.jpg"
+  },
+  {
+    "id": 21,
+    "type": "photo",
+    "image": "img/kegiatan/foto15.jpg"
+  },
+  {
+    "id": 22,
+    "type": "photo",
+    "image": "img/kegiatan/foto16.jpg"
+  },
+  {
+    "id": 23,
+    "type": "photo",
+    "image": "img/kegiatan/foto17.jpg"
+  },
+  {
+    "id": 24,
+    "type": "photo",
+    "image": "img/kegiatan/foto18.jpg"
+  },
+  {
+    "id": 25,
+    "type": "photo",
+    "image": "img/kegiatan/foto19.jpg",
+    "title": "Kelas Bahasa Inggris"
+  },
+  {
+    "id": 26,
+    "type": "photo",
+    "image": "img/kegiatan/foto20.jpg"
+  },
+  {
+    "id": 27,
+    "type": "photo",
+    "image": "img/kegiatan/foto21.jpg"
+  },
+  {
+    "id": 28,
+    "type": "photo",
+    "image": "img/kegiatan/foto22.jpg"
+  },
+  {
+    "id": 29,
+    "type": "photo",
+    "image": "img/kegiatan/foto23.jpg"
+  },
+  {
+    "id": 30,
+    "type": "photo",
+    "image": "img/kegiatan/foto24.jpg"
+  },
+  {
+    "id": 31,
+    "type": "photo",
+    "image": "img/kegiatan/foto25.jpg"
+  },
+  {
+    "id": 32,
+    "type": "photo",
+    "image": "img/kegiatan/foto26.jpg"
+  },
+  {
+    "id": 33,
+    "type": "photo",
+    "image": "img/kegiatan/foto27.jpg"
+  },
+  {
+    "id": 34,
+    "type": "photo",
+    "image": "img/kegiatan/foto28.jpg"
+  },
+  {
+    "id": 35,
+    "type": "photo",
+    "image": "img/kegiatan/foto29.jpg"
+  },
+  {
+    "id": 36,
+    "type": "photo",
+    "image": "img/kegiatan/foto30.jpg"
+  },
+  {
+    "id": 37,
+    "type": "photo",
+    "image": "img/kegiatan/foto31.jpg"
+  },
+  {
+    "id": 38,
+    "type": "photo",
+    "image": "img/kegiatan/foto38.jpg"
+  },
+  {
+    "id": 39,
+    "type": "photo",
+    "image": "img/kegiatan/foto39.jpg"
+  },
+  {
+    "id": 40,
+    "type": "photo",
+    "image": "img/kegiatan/foto40.jpg"
+  },
+  {
+    "id": 41,
+    "type": "photo",
+    "image": "img/kegiatan/foto41.jpg"
+  },
+  {
+    "id": 42,
+    "type": "photo",
+    "image": "img/kegiatan/foto42.jpg"
+  },
+  {
+    "id": 43,
+    "type": "photo",
+    "image": "img/kegiatan/foto43.jpg"
+  },
+  {
+    "id": 44,
+    "type": "photo",
+    "image": "img/kegiatan/foto44.jpg"
+  },
+  {
+    "id": 45,
+    "type": "photo",
+    "image": "img/kegiatan/foto45.png"
+  },
+  {
+    "id": 46,
+    "type": "photo",
+    "image": "img/kegiatan/foto46.png"
+  },
+  {
+    "id": 47,
+    "type": "photo",
+    "image": "img/kegiatan/foto47.png"
+  },
+  {
+    "id": 48,
+    "type": "video",
+    "video": "img/kegiatan/video7.mp4",
+    "thumbnail": "img/kegiatan/lebaran-thumb.jpg"
+  },
+  {
+    "id": 49,
+    "type": "photo",
+    "image": "img/kegiatan/foto49.jpg"
+  },
+  {
+    "id": 50,
+    "type": "photo",
+    "image": "img/kegiatan/foto50.jpg"
+  },
+  {
+    "id": 51,
+    "type": "photo",
+    "image": "img/kegiatan/zahin1.jpg"
+  },
+  {
+    "id": 52,
+    "type": "photo",
+    "image": "img/kegiatan/zahin3.jpg"
+  },
+  {
+    "id": 53,
+    "type": "photo",
+    "image": "img/kegiatan/zahin4.jpg"
+  },
+  {
+    "id": 54,
+    "type": "photo",
+    "image": "img/kegiatan/zahin5.jpg"
+  },
+  {
+    "id": 55,
+    "type": "photo",
+    "image": "img/kegiatan/zahin6.jpg"
+  },
+  {
+    "id": 56,
+    "type": "photo",
+    "image": "img/kegiatan/zahin7.jpg"
+  },
+  {
+    "id": 57,
+    "type": "photo",
+    "image": "img/kegiatan/zahin8.jpg"
+  },
+  {
+    "id": 58,
+    "type": "photo",
+    "image": "img/kegiatan/zahin9.jpg"
+  },
+  {
+    "id": 59,
+    "type": "photo",
+    "image": "img/kegiatan/zahin10.jpg"
+  },
+  {
+    "id": 60,
+    "type": "photo",
+    "image": "img/kegiatan/zahin11.jpg"
+  },
+  {
+    "id": 61,
+    "type": "photo",
+    "image": "img/kegiatan/zahin12.jpg"
+  },
+  {
+    "id": 62,
+    "type": "photo",
+    "image": "img/kegiatan/gowet1.jpg"
+  },
+  {
+    "id": 63,
+    "type": "photo",
+    "image": "img/kegiatan/gowet2.jpg"
+  },
+  {
+    "id": 64,
+    "type": "photo",
+    "image": "img/kegiatan/gowet3.jpg"
+  },
+  {
+    "id": 65,
+    "type": "photo",
+    "image": "img/kegiatan/gowet4.jpg"
+  },
+  {
+    "id": 66,
+    "type": "photo",
+    "image": "img/kegiatan/gowet5.jpg"
+  },
+  {
+    "id": 67,
+    "type": "photo",
+    "image": "img/kegiatan/hutri1.jpg"
+  },
+  {
+    "id": 68,
+    "type": "photo",
+    "image": "img/kegiatan/hutri2.jpg"
+  },
+  {
+    "id": 69,
+    "type": "photo",
+    "image": "img/kegiatan/hutri3.jpg"
+  },
+  {
+    "id": 70,
+    "type": "photo",
+    "image": "img/kegiatan/hutri4.jpg"
+  },
+  {
+    "id": 71,
+    "type": "photo",
+    "image": "img/kegiatan/hutri5.jpg"
+  },
+  {
+    "id": 72,
+    "type": "photo",
+    "image": "img/kegiatan/hutri6.jpg"
+  },
+  {
+    "id": 73,
+    "type": "photo",
+    "image": "img/kegiatan/hutri7.jpg"
+  },
+  {
+    "id": 74,
+    "type": "photo",
+    "image": "img/kegiatan/hutri9.jpg"
+  },
+  {
+    "id": 75,
+    "type": "video",
+    "video": "img/kegiatan/hutri1.mp4",
+    "thumbnail": "img/kegiatan/natal-thumb.jpg"
+  },
+  {
+    "id": 76,
+    "type": "video",
+    "video": "img/kegiatan/hutri2.mp4",
+    "thumbnail": "img/kegiatan/natal-thumb.jpg"
+  },
+  {
+    "id": 77,
+    "type": "video",
+    "video": "img/kegiatan/hutri3.mp4",
+    "thumbnail": "img/kegiatan/natal-thumb.jpg"
+  }
+]
