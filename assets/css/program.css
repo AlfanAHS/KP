@@ -32,7 +32,6 @@
 
 /* ========== HERO SECTION ========== */
 .hero-program {
-  background: linear-gradient(var(--hero-gradient-start),var(--hero-gradient-end)), url('img/slideshow/slide3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
