@@ -9,7 +9,7 @@ $(document).ready(function() {
   const CONFIG = {
     paths: {
       images: '/img/',
-      data: '/assets/data/'
+      data: '../data/'
     }
   };
 
